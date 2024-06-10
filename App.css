@@ -1,0 +1,98 @@
+/* App.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f8f8f8; /* Optional: Background color for the whole page */
+  }
+  
+  .container {
+    display: flex;
+    width: 900px;
+    max-width: 1200px;
+    margin: auto;
+    background-color: #f8f8f8; /* Background color for the container */
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .left, .right {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add some shadow for better visual */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .left {
+    background-color: #333; /* Background color for the left section */
+    color: white;
+  }
+  
+  .head {
+    font-size: 2.5em; /* Large font size for the header */
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px; /* Space between header and paragraph */
+  }
+  
+  .para {
+    font-size: 1.2em;
+    text-align: center;
+    max-width: 80%;
+  }
+  
+  .right {
+    background-color: white; 
+  }
+  
+  .Signup button {
+    width: 100px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: white;
+    color: #333;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .Signup button:hover {
+    background-color: #333;
+    color: white;
+  }
+  .container.slide .left {
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .container.slide .right {
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-in-out;
+  }
+  .welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px; /* Makes the div take the full height of the viewport */
+  }
+  
+  .welcome h2 {
+    font-size: 3rem; /* Adjust font size as needed */
+    animation: fadeIn 2s ease-in-out; /* Add fade-in animation */
+  }
+  
+  /* Keyframes for fade-in animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
